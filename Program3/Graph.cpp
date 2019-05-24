@@ -98,7 +98,7 @@ vector<int> Graph::GetAdjacentNodes(const size_t& index) const
 		throw "GetAdjacentNodes: index out of range.";
 	}
 	vector<int> ans;
-	for (size_t i = 0; i < nodes.size(); i++)
+	for (int i = 0; i < nodes.size(); i++)
 	{
 		const int cap = edges[index][i].GetCapacity();
 		if (cap != 0 && cap != edges[index][i].GetFlow())
